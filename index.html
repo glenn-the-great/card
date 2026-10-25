@@ -75,6 +75,8 @@ main{position:relative;z-index:1;max-width:460px;margin:-150px auto 0;padding:0 
 footer{text-align:center;color:var(--muted);font-size:11px;margin-top:6px}
 /* mobile: no monogram, name sits closer to a smaller headshot, Save contact visible on first screen */
 @media (max-width:600px){
+/* nudge the bridge so the tower sits centered behind the headshot */
+.bridge{left:calc(-6% + 12px)}
 .inner{padding-top:64px}
 main{margin-top:-466px}
 .photo{width:70%;width:clamp(44%,calc((100svh - 390px)*.8),70%);justify-self:center}
